@@ -1,0 +1,26 @@
+:root{
+    --header-font:"Barlow",sans-serif;
+    --primary-font:"Barlow Condensed",sans-serif;
+    --mono-font:"Space Mono",sans-serif;
+    --default-font-size:20px;
+    --semi-bold:600;
+    --header-font-color:#939caa;
+    --hover-color:#fcb72b;
+    --title-color:#495567;
+}
+
+@font-face {
+    font-family: "Barlow";
+    src: url('../assets/fonts/Barlow-Regular.ttf');
+}
+
+
+@font-face {
+    font-family: "Barlow Condensed";
+    src: url('../assets/fonts/BarlowCondensed-Regular.ttf');
+}
+
+@font-face {
+    font-family:"Space Mono", ;
+    src: url('../assets/fonts/SpaceMono-Regular.ttf');
+}
