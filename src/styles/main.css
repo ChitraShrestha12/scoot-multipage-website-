@@ -628,6 +628,44 @@ section.career-section {
   animation-delay: 1.3s;
 }
 
+.map-img {
+  max-width: 1000px;
+  margin: 24px auto;
+}
+
+.map-img img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.scoot-request-section {
+  margin-block: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+.scoot-request-heading,
+.scoot-request-content {
+  flex: 1;
+}
+
+.scoot-request-heading {
+  align-self: flex-start;
+}
+
+.scoot-request-heading > h1 {
+  font-size: 3rem;
+  color: #495567;
+  font-weight: 700;
+}
+
+.scoot-request-description > p {
+  font-size: 24px;
+  margin-bottom: 26px;
+}
+
 @media (max-width: 1024px) {
   header,
   section,
@@ -696,6 +734,10 @@ section.career-section {
 
   .faqs-all {
     width: 100%;
+  }
+
+  .scoot-request-description > p {
+    text-align: justify;
   }
 }
 
@@ -879,6 +921,12 @@ section.career-section {
 
   footer nav {
     display: flex;
+  }
+
+  .scoot-request-section{
+    flex-direction: column;
+    margin-top: 40px;
+    gap: 20px;
   }
 }
 
