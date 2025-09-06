@@ -2,7 +2,7 @@ import React from "react";
 import Button from "./Button";
 import telemetryImg from "../assets/Images/telemetry.jpg";
 
-function BenefitCard({benefitTitle,benefitInformation,benefitImg}) {
+function BenefitCard({benefitTitle,benefitInformation,benefitImg,btnName}) {
   return (
     <>
       <div className="benefit-description">
@@ -10,7 +10,7 @@ function BenefitCard({benefitTitle,benefitInformation,benefitImg}) {
         <p className="benefit-information">
          {benefitInformation}
         </p>
-        <Button btnName={"Learn More"} />
+        <Button btnName={btnName} />
       </div>
 
       <div className="benefit-img">

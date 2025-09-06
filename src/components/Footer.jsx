@@ -9,9 +9,9 @@ function Footer() {
         <Link to="/"><img src={CompanyLogo} alt="company-logo" /></Link>
       </div>
       <nav>
-        <Link to="about" >About</Link>
-        <Link to="location">Location</Link>
-        <Link to="careers"> Careers</Link>
+        <Link to="/about" >About</Link>
+        <Link to="/location">Location</Link>
+        <Link to="/careers"> Careers</Link>
       </nav>
     </footer>
   )

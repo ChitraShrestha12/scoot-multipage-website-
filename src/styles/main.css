@@ -295,7 +295,7 @@ nav > a:hover {
   font-size: 1rem;
   font-weight: var(--semi-bold);
   color: #939caa;
-  margin-bottom: 60px;
+  margin-bottom: 30px;
 }
 
 .benefit-information.about-info {
@@ -666,6 +666,37 @@ section.career-section {
   margin-bottom: 26px;
 }
 
+.job-section {
+  margin: 40px 80px;
+  background-color: #f2f5f9;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.job-vacancy .job-title {
+  font-size: 32px;
+  color: #495567;
+}
+
+.job-vacancy .job-location {
+  font-size: 22px;
+  color: #495567;
+}
+
+.job-section .apply-btn {
+  cursor: pointer;
+  padding: 10px 50px;
+  background-color: #fcb72b;
+  border: none;
+  outline: none;
+}
+
+.apply-btn > a {
+  font-size: 24px;
+  color: white;
+}
+
 @media (max-width: 1024px) {
   header,
   section,
@@ -717,7 +748,7 @@ section.career-section {
   }
 
   .value-card {
-    margin-bottom: 60px;
+    margin-bottom: 30px;
   }
 
   .value-card:last-child {
@@ -738,6 +769,15 @@ section.career-section {
 
   .scoot-request-description > p {
     text-align: justify;
+  }
+
+  .job-vacancy .job-title {
+    font-size: 28px;
+    font-weight: 600;
+  }
+  .job-vacancy .job-location {
+    font-size: 20px;
+    color: #495567;
   }
 }
 
@@ -923,10 +963,24 @@ section.career-section {
     display: flex;
   }
 
-  .scoot-request-section{
+  .scoot-request-section {
     flex-direction: column;
     margin-top: 40px;
     gap: 20px;
+  }
+
+  .job-section{
+    flex-direction: column;
+  }
+
+    .job-vacancy .job-title {
+    font-size: 24px;
+    text-align: center;
+  }
+
+   .job-vacancy .job-location {
+    text-align: center;
+    margin-block: 14px;
   }
 }
 

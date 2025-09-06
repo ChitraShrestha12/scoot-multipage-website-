@@ -25,6 +25,7 @@ function Benefits() {
               "The Scoot app is available with riding telemetry. This means it canshow you your average speed, how long you've been using the scooter,your traveling distance, and many more things all in an easy to use app."
             }
             benefitImg={telemetryImg}
+            btnName={"Learn More"}
           />
         </div>
       </section>
@@ -62,6 +63,7 @@ function Benefits() {
               "Our payment is as easy as one two three. We accept most credit cards and debit cards. You can also link your PayPal account inside the app. Need to pay later? No worries! You can defer payment for up to a month."
             }
             benefitImg={paymentImg}
+            btnName={"Learn More"}
           />
         </div>
       </section>
