@@ -64,7 +64,6 @@ function ContactUs() {
 
       setFormData({ name: "", email: "", msg: "",subject:"" });
     }
-    console.log(formData);
   };
   return (
     <section className="contact-us-section">

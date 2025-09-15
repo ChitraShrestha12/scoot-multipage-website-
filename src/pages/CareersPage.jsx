@@ -51,7 +51,7 @@ function CareersPage() {
             ref={ref}
             key={job.id}
             className={`job-section ${inView ? "job-right-fade" : ""}`}
-            style={{ animationDelay: `${index * 0.25}s` }}
+            style={{ animationDelay: `${index * 0.2}s` }}
           >
             <div className="job-vacancy">
               <p className="job-title">{job.title}</p>
