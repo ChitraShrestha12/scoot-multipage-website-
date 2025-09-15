@@ -8,7 +8,7 @@ Built as a **Frontend Mentor challenge**, this project demonstrates **responsive
 
 ## 🔗 View Live Site
 
-[View Live Site]((https://scoot-app-landing.netlify.app/))
+[View Live Site](https://scoot-app-landing.netlify.app/)
 
 ---
 
