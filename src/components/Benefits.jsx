@@ -5,6 +5,7 @@ import telemetryImg from "../assets/Images/telemetry.jpg";
 import cityImg from "../assets/Images/near-you.jpg";
 import paymentImg from "../assets/Images/payments.jpg";
 import { useInView } from "react-intersection-observer";
+import { Link } from "react-router";
 
 function Benefits() {
   const { ref: refTelemetry, inView: isRefTelemetry } = useInView();
@@ -47,7 +48,9 @@ function Benefits() {
               hometown. We’re aiming to let our scooters loose on 23 cities over
               the coming year.
             </p>
-            <Button btnName={"Learn More"} />
+            <Link to="/about">
+              <Button btnName={"Learn More"} />
+            </Link>
           </div>
         </div>
       </section>

@@ -32,7 +32,7 @@ function Header() {
         <Link to="location" onClick={handleClickLink}>Location</Link>
         <Link to="careers" onClick={handleClickLink}> Careers</Link>
         <button className={`contact-link ${isOpen ? "active" : ""}`} onClick={handleClickLink}>
-          Get Scootin
+          <Link to={"/contact-us"}>Get Scootin</Link>
         </button>
       </nav>
 

@@ -4,7 +4,6 @@ import chevronSvg from "../assets/Images/chevron.svg";
 
 function FaqContent({faqContentQuestion,faqContentAnswer,myFaqRef,myFaqInView}) {
     const[isOpen,setIsOpen] = useState(false)
-    console.log(myFaqRef,myFaqInView);
     
   return (
     <div ref={myFaqRef} className={`faqs-content ${myFaqInView?"fade-faqs-right":""}`} onClick={()=>{

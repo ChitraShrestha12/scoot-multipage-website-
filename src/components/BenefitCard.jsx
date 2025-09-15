@@ -1,6 +1,7 @@
 import React from "react";
 import Button from "./Button";
 import telemetryImg from "../assets/Images/telemetry.jpg";
+import { Link } from "react-router";
 
 function BenefitCard({benefitTitle,benefitInformation,benefitImg,btnName}) {
   return (
@@ -10,7 +11,7 @@ function BenefitCard({benefitTitle,benefitInformation,benefitImg,btnName}) {
         <p className="benefit-information">
          {benefitInformation}
         </p>
-        <Button btnName={btnName} />
+        <Link to='/about'><Button btnName={btnName} /></Link>
       </div>
 
       <div className="benefit-img">

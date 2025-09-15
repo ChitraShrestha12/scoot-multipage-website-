@@ -4,6 +4,8 @@ import AboutPage from "./pages/AboutPage";
 import CareersPage from "./pages/CareersPage";
 import LocationPage from "./pages/LocationPage";
 import HomePage from "./pages/HomePage";
+import JobInfo from "./pages/JobInfo";
+import ContactUs from "./pages/ContactUs";
 
 export default function App() {
   return (
@@ -12,8 +14,12 @@ export default function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="about" element={<AboutPage />} />
-        <Route path="careers" element={<CareersPage />} />
         <Route path="location" element={<LocationPage />} />
+        <Route path="careers">
+          <Route index element={<CareersPage />} />
+          <Route path=":jobInfo" element={<JobInfo />} />
+        </Route>
+        <Route path="contact-us" element={<ContactUs />} />
       </Routes>
     </>
   );

@@ -13,6 +13,7 @@ function HowItWorks() {
             key={index}
             ref={ref}
             className={`guide-step ${inView ? "fade-in-left-step":""}`}
+            style={{animationDelay:`${(index+1)*0.3}s`}}
           >
             <Step
               guideImg={step.img}

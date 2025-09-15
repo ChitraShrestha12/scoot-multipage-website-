@@ -46,6 +46,7 @@ function AboutPage() {
                   key={index}
                   faqContentQuestion={worksData.faqContentQuestion}
                   faqContentAnswer={worksData.faqContentAnswer}
+                  index={index+1}
                 />
               );
             })}

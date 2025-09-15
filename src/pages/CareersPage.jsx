@@ -7,20 +7,22 @@ import Banner from "../components/Banner";
 import BenefitCard from "../components/BenefitCard";
 import MissionStatement from "../components/MissionStatement";
 import jobVacancies from "../data/jobVacancy";
-import { Link } from "react-router";
+import { Link, useParams } from "react-router";
+import { useInView } from "react-intersection-observer";
 
 function CareersPage() {
   const [vacancy, setVacancy] = useState(jobVacancies);
+
   return (
     <>
       <section className="career-section">
-        <div className="location-banner">
+        <div className="career-banner">
           <Banner
             tabletImg={careersTabletImg}
             mobileImg={careersMobileImg}
             desktopImg={careersDesktopImg}
           />
-          <h2 className="location-title">Careers</h2>
+          <h1 className="career-title">Careers</h1>
         </div>
       </section>
 
@@ -42,18 +44,24 @@ function CareersPage() {
         <MissionStatement />
       </section>
 
-      {jobVacancies.map((job)=>{
-        return(
-          <section key={job.id} className="job-section">
-        <div className="job-vacancy">
-          <p className="job-title">{job.title}</p>
-          <p className="job-location">{job.location}</p>
-        </div>
-        <button className="apply-btn">
-          <Link to="/">Apply</Link>
-        </button>
-      </section>
-        )
+      {jobVacancies.map((job, index) => {
+        const { ref, inView } = useInView({triggerOnce:true});
+        return (
+          <section
+            ref={ref}
+            key={job.id}
+            className={`job-section ${inView ? "job-right-fade" : ""}`}
+            style={{ animationDelay: `${index * 0.25}s` }}
+          >
+            <div className="job-vacancy">
+              <p className="job-title">{job.title}</p>
+              <p className="job-location">{job.location}</p>
+            </div>
+            <button className="apply-btn">
+              <Link to={`${job.jobName}`}>Apply</Link>
+            </button>
+          </section>
+        );
       })}
     </>
   );

@@ -6,6 +6,7 @@ import worldMapImg from "../assets/Images/worldmap.png";
 import Banner from "../components/Banner";
 import Button from "../components/Button";
 import Footer from "../components/Footer";
+import { Link } from "react-router";
 
 function LocationPage() {
   return (
@@ -40,7 +41,9 @@ function LocationPage() {
             </p>
           </div>
           <div className="request-btn">
-            <Button btnName={"Message Us"} />
+            <Link to="/contact-us"><button className="contact-link">
+          Message Us
+        </button></Link>
           </div>
         </div>
       </section>

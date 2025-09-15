@@ -15,6 +15,7 @@ body {
   overflow-x: hidden;
 }
 
+
 header {
   display: flex;
   justify-content: space-between;
@@ -252,18 +253,6 @@ nav > a:hover {
   }
 }
 
-.guide-step.fade-in-left-step:nth-child(1) {
-  animation-delay: 0.4s;
-}
-
-.guide-step.fade-in-left-step:nth-child(2) {
-  animation-delay: 0.7s;
-}
-
-.guide-step.fade-in-left-step:nth-child(3) {
-  animation-delay: 0.9s;
-}
-
 .benefit-card,
 .benefit-card-another {
   margin: 40px 20px;
@@ -398,7 +387,8 @@ section.career-section {
 }
 
 .about-title,
-.location-title {
+.location-title,
+.career-title {
   font-size: 3.5rem;
   color: white;
   position: absolute;
@@ -675,6 +665,7 @@ section.career-section {
 }
 
 .job-vacancy .job-title {
+  font-weight: 900;
   font-size: 32px;
   color: #495567;
 }
@@ -697,11 +688,183 @@ section.career-section {
   color: white;
 }
 
+.job-right-fade {
+  -webkit-animation: job-right-fade 1s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: job-right-fade 1s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+@-webkit-keyframes job-right-fade {
+  0% {
+    -webkit-transform: translateX(50px);
+    transform: translateX(50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes job-right-fade {
+  0% {
+    -webkit-transform: translateX(50px);
+    transform: translateX(50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.job-card {
+  border-radius: 10px;
+  padding: 28px;
+  max-width: 800px;
+  margin: 30px auto;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12), 0 0 0 1px rgba(0, 0, 0, 0.08);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+  border: 1px solid #e2e8f0;
+}
+
+.job-card h2 {
+  margin: 0 0 22px 0;
+  font-size: 30px;
+  font-weight: 700;
+  color: #1a365d;
+  text-align: center;
+  padding-bottom: 15px;
+  border-bottom: 3px solid #4299e1;
+}
+
+.job-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.job-table td {
+  font-size: 22px;
+  font-weight: 500;
+  padding: 16px 20px;
+  border: 1px solid #e2e8f0;
+  background-color: #f8fafc;
+}
+
+.job-table td.key {
+  font-size: 20px;
+  font-weight: 700;
+  width: 200px;
+  background: #2d3748;
+  color: #ffffff;
+  border-right: 3px solid #4299e1;
+}
+
+.job-table td.value {
+  color: #2d3748;
+  background: #ffffff;
+  font-weight: 600;
+}
+
+.contact-us-section {
+  max-width: 800px;
+  margin-block: 20px;
+  padding-block: 30px;
+  margin-inline: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 90px;
+  background-color: #e0e0e0;
+  border-radius: 4px;
+}
+
+.contact-us-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 24px;
+}
+
+.contact-us-info .contact-icon {
+  color: #1da1f2;
+}
+
+.contact-us-info .contact-label {
+  font-size: 28px;
+  color: #333;
+}
+
+.contact-us-info .contact-text {
+  color: #222;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.form-section .form-title {
+  font-size: 28px;
+  margin-block: 4px;
+  color: #007bff;
+}
+
+.form-section .scoot-request {
+  text-align: justify;
+  font-size: 20px;
+  color: #333333;
+  font-weight: 500;
+}
+
+.form-section .contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form .input-field {
+  position: relative;
+}
+
+.input-field .error-msg {
+  position: absolute;
+  font-size: 18px;
+  color: red;
+  bottom: -10px;
+}
+
+.input-field input {
+  border: none;
+  outline: none;
+  background-color: #e6f0fa;
+  margin-block: 14px;
+  padding: 14px;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.contact-form button {
+  width: fit-content;
+  background-color: #007bff;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  font-weight: 600;
+  color: #d7dce3;
+  padding: 8px 16px;
+  margin-top: 18px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
 @media (max-width: 1024px) {
   header,
   section,
   .about-title,
-  .location-title {
+  .location-title,
+  .career-title {
     padding: 20px 60px;
   }
 
@@ -773,7 +936,6 @@ section.career-section {
 
   .job-vacancy .job-title {
     font-size: 28px;
-    font-weight: 600;
   }
   .job-vacancy .job-location {
     font-size: 20px;
@@ -785,7 +947,8 @@ section.career-section {
   header,
   section,
   .about-title,
-  .location-title {
+  .location-title,
+  .career-title {
     padding: 20px 36px;
     .how-it-works-section {
       gap: 20px;
@@ -844,8 +1007,7 @@ section.career-section {
   header .contact-link.active {
     border: 2px solid transparent;
     padding: 12px 24px;
-    background-color: white;
-    color: black;
+    background-color: rgb(50, 55, 48);
     cursor: pointer;
     box-sizing: border-box;
   }
@@ -969,20 +1131,41 @@ section.career-section {
     gap: 20px;
   }
 
-  .job-section{
+  .job-section {
     flex-direction: column;
   }
 
-    .job-vacancy .job-title {
+  .job-vacancy .job-title {
     font-size: 24px;
     text-align: center;
   }
 
-   .job-vacancy .job-location {
+  .job-vacancy .job-location {
     text-align: center;
     margin-block: 14px;
   }
+
+  .job-card {
+    margin-inline: 20px;
+    overflow: hidden;
+  }
+
+  .job-table td.key {
+    width: 100px;
+    font-size: 18px;
+  }
+
+  .job-table td {
+    padding: 8px 14px;
+    font-size: 18px;
+  }
+
+  .contact-us-section {
+    max-width: 600px;
+    gap: 40px;
+  }
 }
+
 
 @media (max-width: 330px) {
   .hero-title > h1 {
