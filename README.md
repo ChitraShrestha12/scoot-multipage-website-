@@ -2,7 +2,7 @@
 
 **Multipage website that showcases the Scoot App** – an app that makes urban mobility **easier, simple, and fun**.  
 
-Built as a **Frontend Mentor challenge**, this project demonstrates **responsive design**, **interactive components**, and **smooth user experience** across devices.  
+Built as a **Frontend Mentor challenge**, this project demonstrates **responsive design**, **interactive components**, and **smooth user experience** across devices.
 
 ---
 
@@ -26,3 +26,6 @@ Built as a **Frontend Mentor challenge**, this project demonstrates **responsive
 ## 📌 Frontend Mentor
 
 This project is based on a **premium challenge from [Frontend Mentor](https://www.frontendmentor.io/)**. All design assets and guidelines were provided by Frontend Mentor.
+
+**Project Overview:**  
+Scoot Website is a **responsive, multipage React application** that showcases the Scoot App, designed to make urban mobility easier, simple, and fun. The site provides interactive components, smooth scrolling, and dynamic content across Home, About, Careers, Locations, and Contact pages. Users can explore app features, company values, job vacancies, and contact options. Built with React.js, Vite, and modern CSS, this project demonstrates **component-based architecture, state management, and responsive design**, making it both a functional showcase for users and a strong portfolio piece for frontend development.
